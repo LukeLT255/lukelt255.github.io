@@ -1,0 +1,228 @@
+/* Stylesheet for index.html */
+
+@font-face{
+  font-family: 'Abolition Regular' ;
+  src: url('../fonts/abolition-regular-webfont.eot');
+ src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/abolition-regular-webfont.woff') format('woff'),
+      url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+.main-title,
+.secondary-title,
+p,
+legend,
+label,
+footer,
+#button
+{
+	font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+}
+
+.main-title {
+	text-align: center;
+	color: snow;
+	background-color: #202630;
+	padding-top: 25px;
+
+	/* padding-bottom: 5%; */
+	height:50px;
+	margin-top: 0;
+	width:100%;
+}
+
+
+.secondary-title{
+	text-align: center;
+
+}
+
+#first{
+	border: none;
+	border-bottom: 4px solid #000;
+	margin-left: 12px;
+	margin-right: 12px;
+	margin-bottom: 0px;
+}
+
+#second{
+	border: none;
+	border-top: 2px solid #000;
+	margin-left: 12px;
+	margin-right: 12px;
+	margin-top: 3px;
+}
+
+#third{
+	border: none;
+	border-top: 2px solid #000;
+	margin:12px;
+	margin-top: 0
+}
+
+p{
+	color: gray;
+	line-height: 1.4em;
+}
+
+p.intro{
+	text-align: center;
+	margin-top: -10px;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+fieldset{
+	border: 0;
+  margin-top: 30px;
+}
+
+legend{
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+#zip{
+  display:block;
+}
+
+.main-section{
+	padding-left: 0;
+	/* margin-left: 3%;
+	margin-right:3%; */
+}
+
+.contact-section{
+	/* border-top: 2px solid #000;
+	border-bottom: 2px solid #000; */
+	margin-top: 2px;
+	padding-bottom: 0;
+}
+
+.contact-section label{
+	color: #606060;
+	font-weight:lighter;
+	margin-bottom: .6em;
+
+}
+
+.newsletter-section label{
+	color: #606060;
+	font-weight:100;
+	display: inline-block;
+	margin-bottom: .6em;
+}
+
+input[placeholder]{
+	text-align: right;
+	font-style: italic;
+
+
+}
+
+input[type ="text"],
+input[type= "radio"],
+input[type="checkbox"],
+input[type ="email"],
+input[type ="tel"],
+select[id="state"],
+textarea[id="topics"],
+button{
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select[id="state"]{
+	background: #f0f0f0;
+	border-radius: .3em;
+	border: none;
+	width:100%;
+	height: 50px;
+	margin-bottom: 1.3em;
+}
+
+input:focus{
+	background: lightgray;
+}
+
+/* input[id="name"]:,
+input[id="email"]:active{
+	text-align: left;
+
+} */
+
+label.light{
+	color: gray;
+	padding-left: 15px;
+}
+
+input[id="zip"]{
+	width: 50%;
+}
+
+textarea{
+	height:90px;
+}
+
+button{
+	background-color: lightseagreen;
+	color: whitesmoke;
+	width: 100%;
+	height: 50px;
+	border: none;
+	border-radius: .3em;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.button{
+	margin-left: 12px;
+	margin-right: 12px;
+
+}
+
+
+
+option#placeholder{
+	color: gray;
+
+}
+
+footer{
+	font-style: italic;
+	color: silver;
+	font-size: 15px;
+	text-align: center;
+	padding-bottom: 4em;
+}
+
+@media (min-width: 768px){
+	.main-title{
+		height: 40px;
+	}
+	.main-section{
+		padding-left: 20%;
+		padding-right: 20%;
+		padding-top:30px;
+	}
+	.description{
+		padding-bottom: 20px;
+	}
+
+  form input, form select {
+     max-width: 70%;
+     display: inline;
+    }
+  #zip{
+    max-width: 35%;
+    display: inline-block;
+  }
+  form label {
+    width: 25%;
+    display: inline-block;
+  }
+}
