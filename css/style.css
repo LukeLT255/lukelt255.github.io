@@ -1,0 +1,366 @@
+
+/*  For screens less than the width of 768px*/
+/* Web Fonts */
+@font-face{
+  font-family: 'Abolition Regular' ;
+  src: url('../fonts/abolition-regular-webfont.eot');
+ src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/abolition-regular-webfont.woff') format('woff'),
+      url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+
+/*  Styling*/
+body{
+  margin: 0px;
+}
+
+
+
+header{
+  background-color: whitesmoke;
+  margin-top: 0px;
+}
+h1.name{
+  text-align: center;
+  margin-top: -5px;
+  padding-top: 50px;
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+  color: #303030;
+}
+
+
+ul.main-nav {
+  text-align: center;
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+  list-style-type: none;
+  margin-top: 6px;
+  margin-bottom: 50px;
+  margin-right: 35px;
+
+}
+
+.main-nav a{
+  color: #383838;
+  text-decoration: none;
+
+  background-color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+	text-align: center;
+	display: block;
+  /* font-size: .95em; */
+  font-size: 100%;
+	text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: bold;
+
+}
+
+img.profile-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+p.intro{
+  text-align: center;
+  padding: 10px 20px 30px 20px;
+
+
+}
+
+h4{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+  color: #383838;
+}
+
+h3{
+  text-align: center;
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+  color: #383838;
+  font-weight: normal;
+}
+
+p{
+    padding: 10px 40px 30px 40px;
+    color: gray;
+    font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.projects{
+  text-align: center;
+}
+
+img.portfolio{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%
+}
+
+
+.bottom{
+  background-color: whitesmoke;
+}
+ .contact{
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-top: 45px;
+
+}
+
+.contact p{
+  text-align: center;
+  padding: 0px 20px 10px 20px;
+}
+
+.contact li{
+  list-style-type: none;
+  text-align: center;
+  color: gray;
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 100;
+  padding-bottom: 17px;
+
+}
+
+li span{
+  color: 	#585858;
+  font-weight: 500;
+
+}
+
+.contact ul{
+  padding-left:0;
+}
+
+footer.container{
+  margin: 0px;
+}
+
+footer{
+  border-top: 0.5px solid lightgray;
+  border-top-style: dotted;
+  border-width: thin;
+  margin-top: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+footer span{
+  text-align: left;
+  padding-left: 0px;
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+  color: #303030;
+  font-weight: 300;
+}
+
+footer nav{
+  display: inline-block;
+  float:right;
+  padding-right: 0px;
+}
+
+footer a{
+  text-decoration: none;
+  color: #303030;
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.footerNav{
+  display: none;
+}
+
+#footerNav{
+  display: none;
+}
+
+
+
+@media (min-width: 768px){
+
+
+.main-nav li{
+  display: inline;
+
+}
+  .main-nav a{
+  color: #383838;
+  text-decoration: none;
+  font-size: 25px;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+	text-align: center;
+	display: inline-block;
+  font-size: .95em;
+	text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: bold;
+  }
+
+  img.profile-image{
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: auto;
+    margin-right: 5%;
+    margin-bottom: 40px;
+    width: 35%;
+    float:right;
+  }
+
+  p.intro{
+    padding-right:50px;
+    font-size: 1.25em;
+    text-align: left;
+    padding-left: 5%;
+  }
+
+  .clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .primary,
+  .secondary,
+  .tertiary
+
+  {
+    width: 50%;
+  }
+
+  .primary{
+    float: left;
+    display: block;
+    max-height: 33%;
+  }
+
+  .secondary{
+    float: right;
+    max-height: 33%;
+  }
+
+  .tertiary{
+    max-height: 33%;
+    display: inline-block;
+    position:relative;
+
+  }
+
+  .calculator{
+    position: absolute;
+    max-height: 33%;
+    width: 100%;
+    float: right;
+    right: -100%;
+    top: 0%;
+  }
+
+
+  .contact{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  #back{
+    display: none;
+  }
+
+  #footerNav{
+    display: contents;
+  }
+
+  ul.footer-nav {
+    text-align: center;
+    font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+    list-style-type: none;
+    margin-top: 6px;
+    margin-bottom: 50px;
+    margin-right: 35px;
+    float: right;
+
+  }
+
+  .footer-nav li{
+    display: inline;
+    padding-right: 1em;
+
+  }
+
+  #footerNav a{
+    color: #303030;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-size: .95em;
+    margin-bottom: 5px;
+
+
+  }
+
+
+}
+
+@media (min-width: 1024px){
+
+  .name{
+    float:left;
+    padding-left: 5%;
+
+  }
+
+  .main-nav{
+    float:right;
+    padding-top: 42px;
+  }
+
+  p.intro{
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 5%;
+  }
+
+  .primary{
+    width: 33%;
+  }
+
+  .secondary{
+    width: 33%;
+  }
+
+  .tertiary{
+    width: 33%;
+    float: right;
+
+  }
+
+  .calculator{
+    position:relative;
+    right: 0%;
+    top: 0%;
+  }
+
+  p{
+    font-size: 1.1em;
+  }
+
+
+
+
+}
